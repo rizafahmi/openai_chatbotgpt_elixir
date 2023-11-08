@@ -13,5 +13,6 @@
   </head>
   <body class="bg-white antialiased">
     <%= @inner_content %>
+    <%= live_render @conn, ChatbotGptWeb.ChatbotLive, session: %{} %>
   </body>
 </html>
